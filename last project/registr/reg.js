@@ -1,19 +1,18 @@
- const allInputs = document.querySelectorAll("inputs")
- const btn = document.querySelectorA(".btn")
+ const allInputs = document.querySelectorAll("input")
+ const btn = document.querySelector("#btn")
 
 
- const users = JSON.parce(localStorage.getItem('users'))
+ const users = JSON.parse(localStorage.getItem('users'))
 
 
 
- btn.addEventlistener("click", (e) => {
-   if(allInputs[1].checkValidaty()){
+ btn.addEventListener("click", (e) => {
    e.preventDefault();
     let newUser = {
      name:allInputs[0].value,
      phone :allInputs[1].value,
-     username: allInputs[2].value,
-     password:allInputs[3].value
+     password:allInputs[3].value,
+     computers: []
     }
 
       users.push(newUser)
@@ -22,11 +21,7 @@
       localStorage.setItem('users', JSON.stringify(users))
       
 
-      location.href = ' ../login/log.html'} 
-      else {
+      location.href = ' ../login/log.html';
 
-        alert('This number is wrong')
-      }
-    
-    })
+  });
       

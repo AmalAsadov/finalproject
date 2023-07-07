@@ -27,33 +27,7 @@ form{
 
 } 
 
-.btt{
-    width: 35%;
-    margin-bottom: 5%;
-    height: 40px;
-background-color: gold;
-}
 h1{
 
     margin-bottom: 5%;
-}
-
-.btn{
-    color: white;
-    background-color: green;
-    padding: 10px 20px;
-    margin-top: 15px;
-    cursor: pointer;
-    width: 23%;
-}
-
-.btnreg{
-    color: white;
-    background-color: blue;
-    width:25% ;
-    margin: 15px;
-    height: 25px;
-}
-.reg{
-    color: white;
 }

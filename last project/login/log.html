@@ -5,28 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="log.css">
-    <link rel="stylesheet" href="/login/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
     <form>
-        <button type="button" class="btt"><a href="../index/index.html">Главная страница</a></button>
+        <a class="btn btn-warning" href="../index/index.html">Главная страница</a>
     
     <h1>Войти в акаунт</h1>
     
     <div class="form-input" class="Name">
     <label for="name">Имя:</label>
-    <input type="text" id="Name" placeholder="Name...">
+    <input type="text" id="name" placeholder="Name...">
     </div>
     
     
     <div class="form-input" class="phone">
-        <label for="phone">Телефон:</label>
-        <input type="text" id="Phone" placeholder="Phone...">
+        <label for="password">  Пароль:</label>
+        <input type="text" id="password" placeholder="password...">
     </div>
     
-    <button class="btn">Войти</button>
+    <button id="btn" class="btn btn-success">Войти</button>
     
-    <p>Нет акаунта?<button class="btnlog"><a class="log" href="../registr/reg.html">Создать аккаунт</a></button>
+    <p>Нет акаунта<a class="btn btn-primary" href="../registr/reg.html">Создать аккаунт</a>
     </form>
+
+    <script src="log.js"></script>
 </body>
 </html>

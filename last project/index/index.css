@@ -4,20 +4,6 @@
     box-sizing: border-box;
 }
 
-.btn{
-    
-    margin-bottom: 4%;
-    margin-left: 1%;
-    margin-top: 2%;
-    color: black;
-    background-color: goldenrod;
-}
-.login{
-    height: 35px;
-    width: 10%;
-    color: white;
-    background-color: darkgreen;
-}
 
 .hname{
  margin-left: 1%;

@@ -2,7 +2,6 @@ const users = [
     {
       name: 'u1',
       password: 'p1',
-      username: 'u1',
       phone: '000-000-0000',
       computers: []
     }
@@ -13,11 +12,12 @@ const users = [
   
   
   const allInputs = document.querySelectorAll('input')
-  const button = document.querySelector('.btn')
+  const button = document.querySelector('#btn')
   
-  BigInt.addEventlistener('click', () =>{
+  button.addEventListener('click', (e) =>{
    e.preventDefault()
-     users.some( user => user.name == allInputs[0]. value && user.password == allInputs[1]. value)
+   let localUser = JSON.parse(localStorage.getItem('users'))
+ let  userAvaible = users.some( user => user.name == allInputs[0]. value && user.password == allInputs[1]. value)
   
      if(userAvaible){
         localStorage.setItem('currentUser', allInputs[0].value )
